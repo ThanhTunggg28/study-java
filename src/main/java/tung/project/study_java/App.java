@@ -1,6 +1,7 @@
 package tung.project.study_java;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -20,6 +21,15 @@ public class App
     	ArrayList<Integer> arr = new ArrayList<>();
     	
     	Set<Integer> set = new HashSet<>();
+    	
+    	Map<Integer, String> map = new HashMap<>();
+    	map.put(1, "A");
+    	map.put(3, "B");
+    	map.put(5, "C");
+		
+		System.out.println("map: " + map);
+		System.out.println("Mapkeys: " + map.keySet());
+		System.out.println("Mapvalues: " + map.values());
         
         for(int i=0; i < 10; i++) {
         	if(i%2==0) {
